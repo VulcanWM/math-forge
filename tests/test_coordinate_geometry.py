@@ -1,6 +1,5 @@
 import unittest
 from math_forge.coordinate_geometry import distance_between_two_points
-# adjust the import if your file is named differently
 
 
 class TestCoordinateGeometry(unittest.TestCase):
