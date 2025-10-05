@@ -1,6 +1,3 @@
-from typing import List
-
-
 def gcd(a: int, b: int) -> int:
     """Greatest common divisor of two integers using Euclid's algorithm."""
 
@@ -23,7 +20,7 @@ def is_prime(n: int) -> bool:
 
     return num_of_factors == 2
 
-def prime_factors(n: int) -> List[int]:
+def prime_factors(n: int) -> list[int]:
     """Returns a list of prime factors of n."""
 
     n_prime_factors = []

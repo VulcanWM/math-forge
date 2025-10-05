@@ -1,11 +1,9 @@
-from typing import List
-
-def arithmetic_mean(data: List[float]) -> float:
+def arithmetic_mean(data: list[float]) -> float:
     """Returns the arithmetic mean of the numbers given in a list of floats."""
 
     return sum(data) / len(data)
 
-def geometric_mean(data: List[float]) -> float:
+def geometric_mean(data: list[float]) -> float:
     """Returns the geometric mean of the numbers given in a list of floats."""
 
     product = 1
