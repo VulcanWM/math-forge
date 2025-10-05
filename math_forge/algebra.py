@@ -8,8 +8,8 @@ def quadratic_roots(a: int, b: int, c:int):
     elif discriminant == 0:
         return (-1 * b) / (2 * a)
     else:
-        root1 = ((-1 * b) + discriminant ** 0.5) / (2 * a)
-        root2 = ((-1 * b) - discriminant)**0.5 / (2 * a)
+        root1 = ((-1 * b) + (discriminant ** 0.5)) / (2 * a)
+        root2 = ((-1 * b) - (discriminant **0.5)) / (2 * a)
         return root1, root2
 
 def completing_the_square(a: int, b: int, c: int) -> list[int | float]:
