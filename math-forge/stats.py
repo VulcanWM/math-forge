@@ -13,3 +13,12 @@ def geometric_mean(data: List[float]) -> float:
         product *= item
 
     return product**(1/len(data))
+
+def median(data):
+    """Returns the median of the numbers given in a list of floats."""
+
+    sorted_data = sorted(data)
+    if len(data) % 2 == 0:
+        return (sorted_data[(len(sorted_data) // 2) - 1] + sorted_data[len(sorted_data) // 2])/2
+    else:
+        return sorted_data[len(sorted_data) // 2]
