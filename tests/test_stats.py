@@ -1,5 +1,5 @@
 import unittest
-from math_forge.stats import arithmetic_mean, geometric_mean, median
+from math_forge.stats import arithmetic_mean, geometric_mean, median, data_range
 
 
 class TestStatsFunctions(unittest.TestCase):
@@ -23,6 +23,11 @@ class TestStatsFunctions(unittest.TestCase):
         self.assertEqual(median([1.5, 2.5, 3.5]), 2.5)
         self.assertEqual(median([1.0, 2.0, 3.0, 4.0]), 2.5)
 
+    def test_data_range(self):
+        self.assertEqual(data_range([10.0, 0.9, 5.5]), 9.1)
+        self.assertEqual(data_range([-5.4, -0.4, -3.4]), 5.0)
+        self.assertEqual(data_range([1.0, 1.0, 1.0]), 0.0)
+        self.assertEqual(data_range([0]), 0)
 
 if __name__ == "__main__":
     unittest.main()

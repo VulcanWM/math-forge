@@ -12,7 +12,7 @@ def geometric_mean(data: list[float]) -> float:
 
     return product**(1/len(data))
 
-def median(data):
+def median(data: list[float]) -> float:
     """Returns the median of the numbers given in a list of floats."""
 
     sorted_data = sorted(data)
@@ -20,3 +20,8 @@ def median(data):
         return (sorted_data[(len(sorted_data) // 2) - 1] + sorted_data[len(sorted_data) // 2])/2
     else:
         return sorted_data[len(sorted_data) // 2]
+
+def data_range(data: list[float]) -> float:
+    """Returns the range of the numbers given in a list of floats."""
+
+    return max(data) - min(data)
